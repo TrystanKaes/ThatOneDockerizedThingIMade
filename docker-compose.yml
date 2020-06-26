@@ -1,0 +1,30 @@
+version: '3.7'
+
+services:
+  server:
+    build: ./server
+    expose:
+      - 8080
+    environment:
+      - TWILIO_ACCOUNT_SID=${TWILIO_ACCOUNT_SID}
+      - TWILIO_AUTH_TOKEN=${TWILIO_AUTH_TOKEN}
+      - TWILIO_PHONE_NUMBER=${TWILIO_PHONE_NUMBER}
+    ports:
+      - 8080:8080
+    volumes:
+      - ./server/src:/usr/src/app/src
+      - ./server/public:/usr/src/app/public
+    # command: node server.js
+
+  client:
+    build: ./client
+    expose:
+      - 8082
+    ports:
+      - 8082:8082
+    volumes:
+      - ./client/src:/usr/src/app/src
+      - ./client/public:/usr/src/app/public
+    links:
+      - "server:server"
+    # command: serve -l 8082 build
