@@ -30,13 +30,13 @@ A trial can be acquired from [Twilio](https://www.twilio.com/try-twilio).
 When up this program runs on [http://localhost:8082](http://localhost:8082).
 
 ## Status
-
+```
 -> Tested on MacBook Pro running macOS Catalina 10.15.5 (19F101); 2.6GHz Intel 6-Core i7;
    16 GB 2667 MHz DDR4
 	-Docker version 19.03.8, build afacb8b
 	-Node version 14.4.0
-    -NPM version 6.14.4
-
+    	-NPM version 6.14.4
+```
 
 **********************
 ** WORKS COMPLETELY **
