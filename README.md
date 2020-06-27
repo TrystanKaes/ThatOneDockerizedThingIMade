@@ -42,4 +42,4 @@ When up this program runs on [http://localhost:8082](http://localhost:8082).
 ** WORKS COMPLETELY **
 **********************
 ```
-Future Implementations will upgrade the the browser tag, make compatible with heroku for public access, increase number of messages, and send provide more extensive privacy information.
+Future Implementations will upgrade the the browser tab, make compatible with heroku for public access, increase number of messages, and provide more extensive privacy information.
